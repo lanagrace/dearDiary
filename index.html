@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+  <h1>Photo Diary</h1>
+  
+  <!-- Link to display data -->
+  <a href="display.html">Display Data</a>
+
+  <p>
+    latitude: <span id="latitude"></span>&deg;<br />
+    longitude: <span id="longitude"></span>&deg;
+  </p>
+  
+  <!-- Required caption input -->
+  <input id="mood" value="caption" required />
+  
+  <!-- Submit button -->
+  <button id="submit">Submit</button>
+
+  <!-- Camera switch button -->
+  <button id="switchCamera">Switch Camera</button>
+
+  <!-- Firebase scripts and custom scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>

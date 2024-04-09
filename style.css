@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+
+canvas {
+  display: block;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .photo-card {
+    max-width: 300px;
+  }
+}
+
+/* Styles for smaller screens (like mobile) */
+@media screen and (max-width: 767px) {
+  .photo-card {
+    max-width: 100%;
+  }
+}

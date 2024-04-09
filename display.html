@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+      /* CSS for the grid layout */
+      .photo-section {
+        margin-bottom: 20px;
+      }
+
+      .photo-card {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-width: 200px;
+      }
+
+      .photo-card img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+</head>
+<body>
+    <a href="index.html">Camera</a>
+    
+    <!-- Element to display data -->
+    <div id="data"></div>
+
+    <!-- Firebase scripts and custom scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="displayData.js"></script>
+</body>
+</html>
